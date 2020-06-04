@@ -11,11 +11,30 @@
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <nav></nav>
-      <section></section>
-    </main>
-    <footer></footer>
+    <div class="content">
+      <h1 class="title">Launch new SpaceX mission</h1>
+      <div class="form content-blue">
+        <form onsubmit="launch(this); return false;">
+          <input
+            type="text"
+            id="name"
+            name="rocketName"
+            placeholder="Mission name"
+          />
+          <input type="submit" value="Launch" />
+        </form>
+      </div>
+      <h1 class="title">Launched SpaceX missions</h1>
+      <div class="content-blue" id="starships">
+        <div class="star-ship">
+          <div class="image">
+            <img src="img/starship.png" alt="starShip" />
+          </div>
+          <div class="name">
+            <h2>Crew Dragon 2</h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
