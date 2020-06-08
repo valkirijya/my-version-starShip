@@ -22,7 +22,8 @@ textarea {
   margin: 0; /* 2 */
 }
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 button,
@@ -33,40 +34,40 @@ button,
 }
 
 .title {
-  text-shadow: 2px 1px 7px rgba(0,0,0,0.43);
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.43);
 }
 
 .content {
   overflow: hidden;
-  font-family: 'Helvetica Neue', Helvetica, 'Calibru', serif;
+  font-family: "Helvetica Neue", Helvetica, "Calibru", serif;
   color: whitesmoke;
   position: relative;
   margin: 0 auto;
   width: 50%;
-  background-color: #F48FB1;
+  background-color: #f48fb1;
   min-height: 100vh;
-  box-shadow: -5px 7px 16px 1px rgba(0,0,0,0.53);
+  box-shadow: -5px 7px 16px 1px rgba(0, 0, 0, 0.53);
   text-align: center;
 }
-
 
 .content-blue {
   width: 100%;
   background-color: #b3d4fc;
   min-height: 100px;
-  box-shadow:
-    inset 0px 5px 8px -5px #000,
-    inset 0px -5px 8px -5px #000;
+  box-shadow: inset 0px 5px 8px -5px #000, inset 0px -5px 8px -5px #000;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #starships {
   padding-bottom: 20px;
   padding-top: 20px;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .form form {
@@ -79,12 +80,13 @@ button,
 .star-ship {
   position: relative;
   margin: 15px auto;
-  width: 50%;
+  width: 60%;
   background-color: whitesmoke;
   height: 100px;
   border-radius: 5px;
-  box-shadow: 7px 10px 13px -6px rgba(0,0,0,0.26);
+  box-shadow: 7px 10px 13px -6px rgba(0, 0, 0, 0.26);
   display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   flex-direction: row;
@@ -93,8 +95,8 @@ button,
   height: 50px;
   width: 50px;
   border-radius: 35px;
-  background-color: #CFD8DC;
-  box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.26);
+  background-color: #cfd8dc;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.26);
   padding: 10px;
   margin: 0 20px;
 }
@@ -107,3 +109,29 @@ button,
   width: 100%;
   height: 100%;
 }
+/* /////////////////////////////////   My task ///////////////////////////////*/
+.delDiv {
+  position: absolute;
+  right: 20px;
+  top: 21%;
+  margin: 10px 20px;
+  width: 40px;
+  height: 40px;
+  color: #000;
+  border: none;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.26);
+  border-radius: 50%;
+  display: inline-block;
+  text-shadow: 1px 1px 1px white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.delDiv:hover {
+  background-color: #cfd8dc;
+  cursor: pointer;
+}
+.delDiv:focus {
+  outline: none;
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
